@@ -22,7 +22,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Just setup the following in your application.rb:
+
+```ruby
+config.quintype_routes.quintype_host = config.publisher_config["api_host"]
+```
+
+/api will now redirect to API host
 
 ## Development
 
