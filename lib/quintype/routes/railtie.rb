@@ -15,6 +15,7 @@ module Quintype::Routes
         reverse_proxy '/rss-feed', api_host
         reverse_proxy '/stories.rss', api_host
         reverse_proxy '/news_sitemap.xml', api_host
+        reverse_proxy /^\/story(\/.*)$/, api_host
       end if api_host
     end
   end
