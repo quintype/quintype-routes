@@ -8,6 +8,8 @@ module Quintype::Routes
         reverse_proxy '/api', api_host
         reverse_proxy '/login', api_host
         reverse_proxy '/auth.form', api_host
+        reverse_proxy '/auth.callback', api_host
+        reverse_proxy '/auth', api_host
         reverse_proxy '/admin', api_host
         reverse_proxy '/shrubbery', api_host
         reverse_proxy '/sitemap', api_host
